@@ -1,0 +1,477 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+/* --------------------------------------------- */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    overflow-x: hidden;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+#main{
+    width: 100vw;
+    background-color: #ffff;
+    overflow: hidden;
+}
+
+nav{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 0px 30px 0px;
+    position: fixed;
+    font-size: 0.8rem;
+    font-weight: 500;
+    z-index: 100;
+}
+
+nav p:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+#nav1, #nav2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+#nav2{
+    gap: 50px;
+}
+
+#logo{
+    width: 70px;
+    overflow: hidden;
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    transform: translateX(-50%);
+}
+
+#logo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+/* section 1 */
+
+.section1{
+    width: fit-content;
+    height: 85vh;
+    display: flex;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+.navigators{
+    width: 70px;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    position: absolute;
+    z-index: 100;
+    bottom: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.navigators div{
+    width: 10px;
+    height: 10px;
+    border: 1px solid #fff;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: all 0.3s ease-in-out;
+}
+
+.navigators .active{
+  background-color: #fff;
+}
+
+.section1 .card{
+    width: 100vw;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section1 .card1{
+    background-image: url(/images/img-1.webp);
+}
+
+.section1 .card2{
+    background-image: url(/images/img-2.webp);
+}
+
+.section1 .card3{
+    background-image: url(/images/img-3.webp);
+}
+
+.section1 .card-content{
+    width: 100%;
+    height: 350px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+    color: #fff;
+    margin-top: 50px;
+}
+
+.section1 .card-content h1{
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.section1 .card-content button{
+    width: 150px;
+    height: 50px;
+    border: none;
+    background-color: black;
+    color: #fff;
+    font-weight: 700;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.section1 .card-content button:hover{
+    color: #face93;
+    filter: contrast(0.8);
+}
+
+
+
+/* section2 */
+.section2 .title{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+    margin-top: 40px;
+    gap: 12px;
+}
+
+.wrapper {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.carousel-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel {
+  display: flex;
+  max-width: fit-content;
+  gap: 40px;
+}
+
+.carousel.sliding-transition {
+  transition: transform 0.5s ease-in-out;
+}
+
+.arrow-button {
+  padding: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #000;
+  cursor: pointer;
+  background-color: transparent;
+  width: 36px;
+  font-size: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+}
+
+span {
+  height: 100%;
+  width: 100%;
+}
+
+.left-arrow {
+  left: 20px;
+}
+
+.right-arrow {
+  right: 20px;
+}
+
+
+/* section 3 */
+
+.section3{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  margin-top: 50px;
+  padding: 0px 100px;
+}
+
+.screen{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.screen .screen-content{
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.screen-content button{
+  width: 150px;
+  height: 50px;
+  border: none;
+  background-color: #face93;
+  color: black;
+  font-weight: 700;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.screen-content button:hover{
+  color: #face93;
+  background-color: black;
+}
+
+.screen .image{
+  /* TODO */
+  width: 50%;
+  overflow: hidden;
+}
+
+.screen .image img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+
+/* section4 */
+
+.section4{
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 50px;
+  padding: 0px 150px;
+}
+
+.section4 button{
+  width: fit-content;
+  height: 20px;
+  border: none;
+  background-color: #d3d3d4;
+  color: black;
+  font-weight: 700;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+
+.section4 button:hover{
+  color: #face93;
+}
+
+/* section5 */
+
+.section5{
+  width: 100%;
+  margin-top: 150px;
+  padding: 0px 100px;
+}
+
+.section5 .title{
+  width: 100%;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #000;
+}
+
+.section5 .journal{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+  margin-top: 50px;
+}
+
+.journal .card{
+  width: 30%;
+}
+
+.journal .card .img{
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+}
+
+.journal .card .img img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transform: scale(1);
+  transition: all 0.3s ease;
+}
+
+.journal .card .img img:hover{
+  transform: scale(1.1);
+}
+
+.journal .card p{
+  padding: 10px 0px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.journal span{
+  text-decoration: underline;
+  margin-right: 10px;
+  font-size: 0.7rem;
+}
+
+.journal .card h2{
+  padding: 10px 0px;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.journal .card button{
+  width: fit-content;
+  height: max-content;
+  border: none;
+  color: black;
+  font-weight: 700;
+  cursor: pointer;
+  padding: 0px;
+  border-bottom: 2px solid #d79381;
+  background-color: transparent;
+}
+
+.journal .card button:hover, .journal .card span:hover{
+  cursor: pointer;
+  color: #face93;
+}
+
+/* section6 */
+
+.section6{
+  width: 100%;
+  min-height: 250px;
+  margin-top: 100px;
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  color: white;
+  padding: 0px 50px;
+  border-bottom: 1px solid #ffffff36;
+}
+
+.section6 .subsec{
+  width: 30%;
+}
+
+.section6 .subsec-sml{
+  width: 15%;
+}
+
+.section6 .subsec-sml a{
+  margin: 5px;
+}
+
+.section6 .subsec-links span{
+  text-decoration: underline;
+  cursor: pointer;
+  margin-right: 10px;
+  font-size: 0.8rem;
+}
+
+.section6 .subsec-email{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.section6 .subsec-email input{
+  width: 100%;
+  height: 50px;
+  border: 1px solid #fff;
+  background-color: transparent;
+  color: black;
+  font-weight: 700;
+  font-size: 0.9rem;
+  padding: 0px 10px;
+}
+
+.section6 .subsec-email button{
+  width: 100%;
+  height: 50px;
+  border: none;
+  background-color: #face93;
+  color: black;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+footer{
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+  color: #fff;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
